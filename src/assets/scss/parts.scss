@@ -1,0 +1,98 @@
+@import 'variables';
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: $secondary;
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 60px;
+    line-height: 1.2333;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 1.5556;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.6667;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &_right {
+        max-width: 1570px;
+        margin: 0 0 0 auto;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leading {
+    margin-bottom: 37px;
+    font-size: 20px;
+    line-height: 1.175;
+    color: $grey-dark;
+}
+
+.btn {
+    min-width: 140px;
+    height: 50px;
+    padding: 0 27px;
+    border: 1px solid $warning-bg;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    color: $light;
+    background-color: $warning-bg;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, .2);
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+        color: $warning;
+        background-color: transparent;
+    }
+
+    &_sm {
+        min-width: 120px;
+        height: 40px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.6667;
+        box-shadow: none;
+    }
+
+    &_big {
+        font-size: 15px;
+        line-height: 1.1333;
+    }
+
+    &_light {
+        border: 1px solid $warning-bg-light;
+        background-color: $warning-bg-light;
+        color: $warning;
+        box-shadow: none;
+
+        &:hover {
+            color: $warning-light;
+        }
+    }
+}
+

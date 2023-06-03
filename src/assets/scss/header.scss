@@ -1,0 +1,62 @@
+@import 'variables';
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    padding: 38px 0;
+}
+
+.logo {
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        margin-right: 13px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 1.6667;
+        font-weight: 700;
+        color: $secondary;
+
+        &_orange {
+            color: $warning;
+        }
+    }
+}
+
+.navigation {
+    margin-left: auto;
+    margin-right: 36px;
+}
+
+.menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 35px;
+
+    &__item {
+        text-align: center;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1429;
+        color: $secondary;
+        transition: all .3s;
+
+        &:active,
+        &:hover {
+            color: $warning;
+        }
+
+        &_active {
+            color: $warning;
+            font-weight: 600;
+        }
+    }
+}

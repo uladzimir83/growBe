@@ -126,7 +126,7 @@ function js() {
 function images() {
     return src(['src/assets/images/*.*', '!src/assets/images/*.svg'], {base: srcPath + "assets/img/"})
         .pipe(newer(path.build.images))
-        .pipe(avif({quality: 50}))
+        .pipe(avif({quality: 70}))
 
         .pipe(src('src/assets/images/*.*', {base: srcPath + "assets/img/"}))
         .pipe(newer(path.build.images))

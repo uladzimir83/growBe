@@ -13,8 +13,9 @@ h1 {
 }
 
 h2 {
+    margin-bottom: 25px;
     font-size: 45px;
-    line-height: 1.5556;
+    line-height: 1.2444;
 }
 
 h3 {
@@ -24,6 +25,14 @@ h3 {
 
 h4 {
     font-size: 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.section_grey {
+    background-color: $lighter-bg;
 }
 
 .container {
@@ -49,6 +58,12 @@ h4 {
     font-size: 20px;
     line-height: 1.175;
     color: $grey-dark;
+
+    &_small {
+        @extend .leading;
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
 
 .btn {
